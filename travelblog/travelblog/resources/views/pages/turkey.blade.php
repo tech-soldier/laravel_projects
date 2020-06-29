@@ -21,7 +21,7 @@
 @section('content')
         <div class="background-img">
             <div id="header-text">
-                <h1>Turkey</h1>
+                <h1>{{ $h1 }}</h1>
             </div>
         </div>
     </header>

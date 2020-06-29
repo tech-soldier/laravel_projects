@@ -62,7 +62,7 @@
 
         <div class="background-img">
             <div id="header-text">
-                <h1>Explore the World</h1>
+                <h1>{{ $h1 }}</h1>
                 <div class="button">
                     <span><a href="/about" title="about me page">Start</a></span>
                 </div>

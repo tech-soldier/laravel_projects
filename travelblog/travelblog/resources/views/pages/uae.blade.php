@@ -24,7 +24,7 @@
     @section('content')
         <div class="background-img">
             <div id="header-text">
-                <h1>United Arab Emirates</h1>
+                <h1>{{ $h1 }}</h1>
             </div>
         </div>
     </header>
@@ -36,7 +36,7 @@
             <a href="#" class="fa fa-google"></a>
             <a href="http://instagram.com/inna_soldier" class="fa fa-instagram"></a>
         </div>
-        <div id="info-heading"><h2>One of the reachest countries in the world</h2></div>
+        <div id="info-heading"><h2>One of the richest countries in the world</h2></div>
         <div id="info">
             <div id="image1"><img src="images/barasti.jpg" alt="Barasti beach Dubai" width="403" height="504"/></div>
             <div id="info-text"><p>The United Arab Emirates (or UAE) has grown from an empty desert to one of the most

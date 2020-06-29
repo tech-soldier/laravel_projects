@@ -12,29 +12,41 @@ class PagesController extends Controller
         # receive data from the model
         # compile or process data from the model if needed
         # pass that data to the correct view
-        return view('pages.home');
+
+        $h1 = "Explore The World";
+
+        return view('pages.home')->withH1($h1);
+
     }
 
     public function getAbout() {
-        return view('pages.about');
+        $h1 = "About Me";
+
+        return view('pages.about')->withH1($h1);
     }
 
     public function getDestinations() {
-        return view('pages.destinations');
+        $h1 = "Destinations";
+
+        return view('pages.destinations')->withH1($h1);
     }
 
     public function getTurkey() {
-        return view('pages.turkey');
-    }
+        $h1 = "Turkey";
 
+        return view('pages.turkey')->withH1($h1);
+    }
 
     public function getUkraine() {
-        return view('pages.ukraine');
+        $h1 = "Ukraine";
+
+        return view('pages.ukraine')->withH1($h1);
     }
 
-
     public function getUae() {
-        return view('pages.uae');
+        $h1 = "United Arab Emirates";
+
+        return view('pages.uae')->withH1($h1);
     }
 
 

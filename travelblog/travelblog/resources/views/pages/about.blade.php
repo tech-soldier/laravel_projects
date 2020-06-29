@@ -117,7 +117,7 @@
 
         <div class="background-img">
             <div id="header-text">
-                <h1>About Me</h1>
+                <h1>{{ $h1 }}</h1>
             </div>
         </div>
     </header>
