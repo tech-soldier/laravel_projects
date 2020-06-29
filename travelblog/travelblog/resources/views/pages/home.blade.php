@@ -3,10 +3,8 @@
 @section('title', "Inna's Travels")
 
 @section('stylesheets')
-    <style>
-
         .background-img {
-            background: url{{ asset('images/header-smoke') }};
+            background: url(images/header-smoke.jpg);
         }
 
         #about-me {
@@ -58,8 +56,6 @@
                 height: auto;
             }
         }
-
-    </style>
 @endsection
 
 @section('content')
@@ -138,3 +134,4 @@
     </section>
 
 @endsection
+

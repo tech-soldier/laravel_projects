@@ -23,4 +23,19 @@ class PagesController extends Controller
         return view('pages.destinations');
     }
 
+    public function getTurkey() {
+        return view('pages.turkey');
+    }
+
+
+    public function getUkraine() {
+        return view('pages.ukraine');
+    }
+
+
+    public function getUae() {
+        return view('pages.uae');
+    }
+
+
 }

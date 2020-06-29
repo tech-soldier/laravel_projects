@@ -19,3 +19,9 @@ Route::get('/', 'PagesController@getIndex');
 Route::get('about','PagesController@getAbout');
 
 Route::get('destinations','PagesController@getDestinations');
+
+Route::get('ukraine','PagesController@getUkraine');
+
+Route::get('uae','PagesController@getUae');
+
+Route::get('turkey','PagesController@getTurkey');
