@@ -52,7 +52,7 @@ class PagesController extends Controller
 
     //contact page
     public function getContact() {
-        $title = "Support our community";
+        $title = "Contact Us";
         $content ="Donec posuere massa ut nulla ullamcorper cursus. Donec magna arcu, laoreet nec sapien imperdiet, commodo tempor neque.
         Vivamus ac sodales nibh. Integer condimentum cursus tortor non commodo. Aliquam nunc orci, molestie elementum lorem sit amet,
         lobortis sollicitudin lectus. Fusce luctus, neque id maximus sodales, arcu magna sollicitudin enim, convallis auctor ante nunc quis elit. ";
