@@ -14,8 +14,8 @@ class PagesController extends Controller
         Donec imperdiet, elit sed ornare malesuada, justo nisl interdum lectus, in consectetur odio lacus non felis. Nunc molestie,
         tortor quis venenatis rhoncus, nisi mauris blandit justo,
         vitae facilisis eros libero sit amet metus. Vestibulum sit amet venenatis quam.";
-        
-        return view('main')->withTitle($title);
+
+        return view('main')->withTitle($title)->withContent($content);
     }
 
     //about page
@@ -28,7 +28,7 @@ class PagesController extends Controller
         Cras elit mauris, lobortis a finibus vel, suscipit non sem. Nam ullamcorper sagittis odio sed vestibulum.
         Vivamus condimentum eget metus vitae vulputate.";
 
-        return view('main')->withTitle($title);
+        return view('main')->withTitle($title)->withContent($content);
     }
 
     //support page
@@ -38,7 +38,7 @@ class PagesController extends Controller
         Suspendisse sed tincidunt quam. Ut lobortis velit sed lorem sollicitudin accumsan.
         Vestibulum tincidunt mollis rhoncus. Maecenas ullamcorper neque purus. Etiam sed urna felis. Etiam facilisis lacus non mollis bibendum.";
 
-        return view('main')->withTitle($title);
+        return view('main')->withTitle($title)->withContent($content);
     }
 
     //services page
@@ -47,7 +47,7 @@ class PagesController extends Controller
         $content ="Aliquam urna neque, sagittis ut magna nec, lacinia finibus tortor. Aenean ultricies sollicitudin dolor, nec suscipit metus mollis nec.
         Mauris sagittis risus leo, vel vestibulum quam molestie at. Donec faucibus pharetra ultricies.";
 
-        return view('main')->withTitle($title);
+        return view('main')->withTitle($title)->withContent($content);
     }
 
     //contact page
@@ -57,6 +57,6 @@ class PagesController extends Controller
         Vivamus ac sodales nibh. Integer condimentum cursus tortor non commodo. Aliquam nunc orci, molestie elementum lorem sit amet,
         lobortis sollicitudin lectus. Fusce luctus, neque id maximus sodales, arcu magna sollicitudin enim, convallis auctor ante nunc quis elit. ";
 
-        return view('main')->withTitle($title);
+        return view('main')->withTitle($title)->withContent($content);
     }
 }
