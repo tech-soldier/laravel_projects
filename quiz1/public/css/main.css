@@ -1,0 +1,78 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+    font-family: Tahoma, sans-serif;
+}
+
+html {
+    background-color: #fffbe3;
+}
+
+nav {
+    background-color: #403b1d;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 20px 40px;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#wrapper {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /*flex-flow: row wrap;*/
+    align-items: stretch;
+    min-height: 700px;
+}
+
+#left {
+    min-width: 500px;
+    padding: 10px;
+    background: #f5e16c;
+    flex-grow: 2;
+
+}
+
+#right {
+    padding: 10px;
+    min-width: 400px;
+    background: #fadc2a;
+    flex-grow: 1;
+    border: 1px solid black;
+}
+
+.footer {
+    min-height: 100px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+.footer p{
+    margin: 0;
+    padding-top: 10px;
+
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
