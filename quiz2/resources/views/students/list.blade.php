@@ -15,14 +15,12 @@
                 Web Development Diploma 2020
             </h1>
             <h2 class="subtitle">
-                Student List: {{ $title }}
+                {{ $title }}
             </h2>
             <ul>
-                <li>Inna Soldatkina</li>
-                <li>Jasreen Kaur</li>
-                <li>Mykita Gazul</li>
-                <li>Milad Darani</li>
-                <li>Dawn Baker</li>
+                @foreach($students as $student)
+                <li>{{ $student->first_name }} {{ $student->last_name }}</li>
+                @endforeach
             </ul>
         </div>
     </div>
