@@ -7,37 +7,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-               PACE WDD6
-            </a>
-
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-end">
-            <a class="navbar-item">
-                Home
-            </a>
-            <a class="navbar-item">
-                Students
-            </a>
-        </div>
-    </nav>
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                Hello World
-            </h1>
-            <p class="subtitle">
-                My first website with <strong>Bulma</strong>!
-            </p>
+@include('partials._nav')
+    <section class="hero is-medium is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Web Development Diploma 2020
+                </h1>
+                <h2 class="subtitle">
+                    PACE, The University of Winnipeg
+                </h2>
+            </div>
         </div>
     </section>
+    <footer class="footer is-dark">
+        <div class="content has-text-centered">
+            <p>
+                 Quiz 2 - PHP MVC 2020 by Inna Soldatkina
+            </p>
+        </div>
+    </footer>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </body>
 </html>
