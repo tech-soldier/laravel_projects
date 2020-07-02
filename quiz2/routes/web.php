@@ -17,9 +17,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/list', function () {
-    return view('students.list');
-});
+Route::get('/list', 'StudentsController@index');
 
 Route::get('/student', function () {
     return view('students.student');

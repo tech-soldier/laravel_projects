@@ -12,6 +12,7 @@
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
+                    {{ $title }}
                     Web Development Diploma 2020
                 </h1>
                 <h2 class="subtitle">

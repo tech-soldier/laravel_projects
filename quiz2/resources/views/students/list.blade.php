@@ -15,7 +15,7 @@
                 Web Development Diploma 2020
             </h1>
             <h2 class="subtitle">
-                Student List:
+                Student List: {{ $title }}
             </h2>
             <ul>
                 <li>Inna Soldatkina</li>
