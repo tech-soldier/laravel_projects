@@ -14,10 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $title = "Web Development Diploma 2020";
+    return view('home')->withTitle($title);
 });
 
 Route::get('/list', 'StudentsController@index');
 
-Route::get('/student', 'StudentsController@student');
+Route::get('/list/{id}/show', 'StudentsController@show');
 

@@ -12,14 +12,14 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-                Web Development Diploma 2020
+                {{ $title }}
             </h1>
             <h2 class="subtitle">
-                {{ $title }}
+                Web Development Diploma 2020
             </h2>
             <ul>
                 @foreach($students as $student)
-                <li>{{ $student->first_name }} {{ $student->last_name }}</li>
+                    <a href="/list/{{ $student->id }}/show"><li>{{ $student->first_name }} {{ $student->last_name }}</li></a>
                 @endforeach
             </ul>
         </div>

@@ -13,4 +13,11 @@ class StudentsController extends Controller
         $title = 'Student List';
         return view('students.list', compact('students', 'title'));
     }
+
+    public function show(Student $id)
+    {
+        $student = $id;
+        $title = "Student Information";
+        return view('students.student', compact('student', 'title'));
+    }
 }

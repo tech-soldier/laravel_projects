@@ -12,18 +12,21 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-                Inna Soldatkina
+                {{ $title }}
             </h1>
             <h2 class="subtitle">
-                Student number: 611044
+                 {{ $student->first_name }} {{ $student->last_name }}
+            </h2>
+            <h2 class="subtitle">
+                Student number: {{ $student->student_number }}
             </h2>
             <div class="columns">
                 <div class="column is-one-fifth">
-                    <img src="images/dawn.jpg" alt="Placeholder image">
+                    <img src="../../images/{{ $student->image }}" alt="Student image">
                 </div>
             </div>
             <h2 class="subtitle">
-                Email: email@webmail.ca
+                Email: {{$student->email}}
             </h2>
         </div>
     </div>
