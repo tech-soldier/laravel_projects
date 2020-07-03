@@ -57,13 +57,16 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-two-thirds">
+
                     <div class="card-posts">
+                        @foreach($recipes as $recipe)
                         <div class="card-post-item">
+
                             <div class="mb-4"><a class="button has-background-grey-lighter has-text-black is-radiusless is-uppercase">Ukrainian</a></div>
                             <div class="card card-post is-shadowless">
                                 <div class="card-post-header">
-                                    <h1>Borsh</h1>
-                                    <h4 class="is-uppercase pb-2">August 12, 2017</h4>
+                                    <h1>{{ $recipe->name }}</h1>
+                                    <h4 class="is-uppercase pb-2">{{ date('l, F j, Y  \a\t g:i A', strtotime($recipe->created_at))  }}</h4>
                                 </div>
                                 <div class="card-image">
                                     <figure class="image is-4by3"><img src="images/borsh.jpg" alt="Placeholder image" /></figure>
@@ -77,44 +80,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-post-item">
-                            <div class="mb-4"><a class="button has-background-grey-lighter has-text-black is-radiusless is-uppercase">Lorem ipsum</a></div>
-                            <div class="card card-post is-shadowless">
-                                <div class="card-post-header">
-                                    <h1>Runaway a Road Adventure</h1>
-                                    <h4 class="is-uppercase">August 12, 2017</h4>
-                                </div>
-                                <div class="card-image">
-                                    <figure class="image is-4by3"><img src="images/hummus.jpg" alt="Placeholder image" /></figure>
-                                </div>
-                                <div class="card-content is-paddingless">
-                                    <div class="content">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in est fugiat quia harum eaque sequi illo qui? Tempore ducimus qui laboriosam, laborum molestias numquam corrupti fugit quas
-                                        dolorum similique.
-                                    </div>
-                                    <a href="" class="button has-background-primary has-text-white is-radiusless">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-post-item">
-                            <div class="mb-4"><a class="button has-background-grey-lighter has-text-black is-radiusless is-uppercase">Lorem ipsum</a></div>
-                            <div class="card card-post is-shadowless">
-                                <div class="card-post-header">
-                                    <h1>Runaway a Road Adventure</h1>
-                                    <h4 class="is-uppercase">August 12, 2017</h4>
-                                </div>
-                                <div class="card-image">
-                                    <figure class="image is-4by3"><img src="images/pasta.jpg" alt="Placeholder image" /></figure>
-                                </div>
-                                <div class="card-content is-paddingless">
-                                    <div class="content">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in est fugiat quia harum eaque sequi illo qui? Tempore ducimus qui laboriosam, laborum molestias numquam corrupti fugit quas
-                                        dolorum similique.
-                                    </div>
-                                    <a href="" class="button has-background-primary has-text-white is-radiusless">Read More</a>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                     <ul class="pagination-list">
                         <li>
@@ -226,7 +192,7 @@
     <footer class="footer has-background-dark">
         <div class="container">
             <div class="footer-content">
-                <div>© 2018 Carbonite Blog - All Rights Reserved.</div>
+                <div>MealHacker - 2020</div>
                 <div>
                     <ul class="footer-social-links">
                         <li>
