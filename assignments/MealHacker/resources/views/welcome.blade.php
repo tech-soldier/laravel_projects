@@ -1,100 +1,233 @@
+
+
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Carbonite</title>
+</head>
+<body>
+<header class="header">
+    <nav class="navbar is-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item has-text-white is-size-4 has-text-weight-bold" href="https://biron.bironthemes.com">
+                    MealHacker
+                </a>
+                <span role="button" tabindex="0" class="navbar-burger burger has-text-white" data-target="navbar-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+            </div>
+            <div id="navbar-menu" class="navbar-menu">
+                <div class="navbar-end">
+                    <!-- Loop through the navigation items -->
+                    <a class="navbar-item nav-home is-active" href="">Home</a>
+                    <a class="navbar-item nav-style-guide" href="">Recipes</a>
+                    <a class="navbar-item nav-features" href="">About</a>
+                    <a class="navbar-item nav-tech" href="https://biron.bironthemes.com/tag/technology/">Contact</a>
 
-        <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
         </div>
-    </body>
+    </nav>
+</header>
+<main class="main">
+
+    <section class="hero background-img is-large" style="background-image: url('images/hero.jpg')">
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-size-1 has-text-white has-text-left text-focus-in">
+                    MealHacker
+                </h1>
+                <h2 class="subtitle has-text-light has-text-left">
+                    You just can't live a full life on an empty stomach
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="section main-content">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="card-posts">
+                        <div class="card-post-item">
+                            <div class="mb-4"><a class="button has-background-grey-lighter has-text-black is-radiusless is-uppercase">Ukrainian</a></div>
+                            <div class="card card-post is-shadowless">
+                                <div class="card-post-header">
+                                    <h1>Borsh</h1>
+                                    <h4 class="is-uppercase">August 12, 2017</h4>
+                                </div>
+                                <div class="card-image">
+                                    <figure class="image is-4by3"><img src="images/borsh.jpg" alt="Placeholder image" /></figure>
+                                </div>
+                                <div class="card-content is-paddingless">
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in est fugiat quia harum eaque sequi illo qui? Tempore ducimus qui laboriosam, laborum molestias numquam corrupti fugit quas
+                                        dolorum similique.
+                                    </div>
+                                    <a href="" class="button has-background-primary has-text-white is-radiusless">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-post-item">
+                            <div class="mb-4"><a class="button has-background-grey-lighter has-text-black is-radiusless is-uppercase">Lorem ipsum</a></div>
+                            <div class="card card-post is-shadowless">
+                                <div class="card-post-header">
+                                    <h1>Runaway a Road Adventure</h1>
+                                    <h4 class="is-uppercase">August 12, 2017</h4>
+                                </div>
+                                <div class="card-image">
+                                    <figure class="image is-4by3"><img src="images/hummus.jpg" alt="Placeholder image" /></figure>
+                                </div>
+                                <div class="card-content is-paddingless">
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in est fugiat quia harum eaque sequi illo qui? Tempore ducimus qui laboriosam, laborum molestias numquam corrupti fugit quas
+                                        dolorum similique.
+                                    </div>
+                                    <a href="" class="button has-background-primary has-text-white is-radiusless">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-post-item">
+                            <div class="mb-4"><a class="button has-background-grey-lighter has-text-black is-radiusless is-uppercase">Lorem ipsum</a></div>
+                            <div class="card card-post is-shadowless">
+                                <div class="card-post-header">
+                                    <h1>Runaway a Road Adventure</h1>
+                                    <h4 class="is-uppercase">August 12, 2017</h4>
+                                </div>
+                                <div class="card-image">
+                                    <figure class="image is-4by3"><img src="images/pasta.jpg" alt="Placeholder image" /></figure>
+                                </div>
+                                <div class="card-content is-paddingless">
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in est fugiat quia harum eaque sequi illo qui? Tempore ducimus qui laboriosam, laborum molestias numquam corrupti fugit quas
+                                        dolorum similique.
+                                    </div>
+                                    <a href="" class="button has-background-primary has-text-white is-radiusless">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pagination-list">
+                        <li>
+                            <a class="pagination-link pagination-btn"><i class="fa fa-arrow-left"></i></a>
+                        </li>
+                        <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                        <li><a class="pagination-link" aria-label="Goto page 2">2</a></li>
+                        <li><a class="pagination-link" aria-label="Goto page 3">3</a></li>
+                        <li><a class="pagination-link" aria-label="Goto page 4">4</a></li>
+                        <li>
+                            <a class="pagination-link pagination-btn"><i class="fa fa-arrow-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column sidebar">
+                    <div id="about-me">
+                        <div class="has-text-centered">
+                            <div class="img" style="background: url(./img/aboutme.png);"></div>
+                            <h1 class="has-text-white is-uppercase">About Me</h1>
+                        </div>
+                        <div class="has-text-white body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium facilis, culpa, maiores perspiciatis neque fugiat exercitationem vero soluta eaque expedita suscipit commodi blanditiis aliquid magnam
+                            delectus et! Quaerat, adipisci omnis.<a href="" class="has-text-white is-uppercase">Read More</a>
+                        </div>
+                    </div>
+                    <div id="categories" class="dashed-container">
+                        <div class="dashed-container__title is-uppercase">Categories<span></span></div>
+                        <div class="dashed-container__content">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
+                                    <td><span class="dashed-container__content-counter">(33)</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
+                                    <td><span class="dashed-container__content-counter">(33)</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
+                                    <td><span class="dashed-container__content-counter">(33)</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
+                                    <td><span class="dashed-container__content-counter">(33)</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
+                                    <td><span class="dashed-container__content-counter">(33)</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
+                                    <td><span class="dashed-container__content-counter">(33)</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="latest-blogs" class="dashed-container">
+                        <div class="dashed-container__title is-uppercase">Latest Blogs<span></span></div>
+                        <div class="dashed-container__content">
+                            <a href="" class="latest-blogs__item">
+                                <div class="latest-blogs__item-image" style="background: url('./img/latest-blog-1.png');"></div>
+                                <div class="latest-blogs__item-content">
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                    <div>12-09-2018</div>
+                                </div>
+                            </a>
+                            <a href="" class="latest-blogs__item">
+                                <div class="latest-blogs__item-image" style="background: url('./img/latest-blog-2.png');"></div>
+                                <div class="latest-blogs__item-content">
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                    <div>12-09-2018</div>
+                                </div>
+                            </a>
+                            <a href="" class="latest-blogs__item">
+                                <div class="latest-blogs__item-image" style="background: url('./img/latest-blog-3.png');"></div>
+                                <div class="latest-blogs__item-content">
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                    <div>12-09-2018</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dashed-container">
+                        <div class="dashed-container__title is-uppercase">Subscribe & Follow<span></span></div>
+                        <div class="dashed-container__content">
+                            <div>
+                                <ul class="sidebar-social-links">
+                                    <li>
+                                        <a href="" style="color: #36549d;"><span class="fa fa-facebook-f"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" style="color: #00aaf9;"><span class="fa fa-twitter"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" style="color: #0081c4;"><span class="fa fa-linkedin"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" style="color: #e32601;"><span class="fa fa-youtube"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" style="color: #36549d;"><span class="fa fa-instagram"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
