@@ -47,9 +47,12 @@ class RecipesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Recipe $id)
     {
-        //
+        // id is a recipe
+        $data['recipe'] = $id;
+        $data['title'] = $data['recipe']->name;
+        return view('recipes.show', $data);
     }
 
     /**

@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'RecipesController@index');
+
+Route::get('/recipes/{id}/show', 'RecipesController@show');
