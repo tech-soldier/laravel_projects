@@ -16,7 +16,7 @@ class RecipesController extends Controller
     {
         $recipes = Recipe::all();
         $title = 'Recipe List';
-        return view('welcome', compact('recipes', 'title'));
+        return view('home', compact('recipes', 'title'));
 
     }
 

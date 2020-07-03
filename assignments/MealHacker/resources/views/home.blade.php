@@ -69,12 +69,11 @@
                                     <h4 class="is-uppercase pb-2">{{ date('l, F j, Y  \a\t g:i A', strtotime($recipe->created_at))  }}</h4>
                                 </div>
                                 <div class="card-image">
-                                    <figure class="image is-4by3"><img src="images/borsh.jpg" alt="Placeholder image" /></figure>
+                                    <figure class="image is-4by3"><img src="images/{{ $recipe->image }}" alt="Placeholder image" /></figure>
                                 </div>
                                 <div class="card-content is-paddingless">
                                     <div class="content pt-5">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in est fugiat quia harum eaque sequi illo qui? Tempore ducimus qui laboriosam, laborum molestias numquam corrupti fugit quas
-                                        dolorum similique.
+                                        {!! $recipe->description !!}
                                     </div>
                                     <a href="" class="button has-background-primary has-text-white is-radiusless">Read More</a>
                                 </div>

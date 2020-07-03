@@ -11,6 +11,24 @@ class SeedCategoriesTable extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('categories')->insert([
+            'name' => 'Ukrainian Cuisine'
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Egyptian Cuisine'
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Italian Cuisine'
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Turkish Cuisine'
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Japanese Cuisine'
+        ]);
     }
 }

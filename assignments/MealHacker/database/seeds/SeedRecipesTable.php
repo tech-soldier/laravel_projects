@@ -36,5 +36,185 @@ class SeedRecipesTable extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
+
+        DB::table('recipes')->insert([
+            'name' => '',
+            'image' => '',
+            'prep_time' => 60,
+            'description' => '',
+            'ingredients' => '',
+            'recipe' => '<span>Step 1</span>
+                        <p></p>
+                        <span>Step 2</span>
+                        <p></p>
+                        <span> Step 3</span>
+                        <p></p>
+                        <span>Step 4</span>
+                        <p></p>',
+            'vegetarian' => 'no',
+            'category_id' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('recipes')->insert([
+            'name' => '',
+            'image' => '',
+            'prep_time' => 60,
+            'description' => '',
+            'ingredients' => '',
+            'recipe' => '<span>Step 1</span>
+                        <p></p>
+                        <span>Step 2</span>
+                        <p></p>
+                        <span> Step 3</span>
+                        <p></p>
+                        <span>Step 4</span>
+                        <p></p>',
+            'vegetarian' => 'no',
+            'category_id' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('recipes')->insert([
+            'name' => '',
+            'image' => '',
+            'prep_time' => 60,
+            'description' => '',
+            'ingredients' => '',
+            'recipe' => '<span>Step 1</span>
+                        <p></p>
+                        <span>Step 2</span>
+                        <p></p>
+                        <span> Step 3</span>
+                        <p></p>
+                        <span>Step 4</span>
+                        <p></p>',
+            'vegetarian' => 'no',
+            'category_id' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('recipes')->insert([
+            'name' => '',
+            'image' => '',
+            'prep_time' => 60,
+            'description' => '',
+            'ingredients' => '',
+            'recipe' => '<span>Step 1</span>
+                        <p></p>
+                        <span>Step 2</span>
+                        <p></p>
+                        <span> Step 3</span>
+                        <p></p>
+                        <span>Step 4</span>
+                        <p></p>',
+            'vegetarian' => 'no',
+            'category_id' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('recipes')->insert([
+            'name' => '',
+            'image' => '',
+            'prep_time' => 60,
+            'description' => '',
+            'ingredients' => '',
+            'recipe' => '<span>Step 1</span>
+                        <p></p>
+                        <span>Step 2</span>
+                        <p></p>
+                        <span> Step 3</span>
+                        <p></p>
+                        <span>Step 4</span>
+                        <p></p>',
+            'vegetarian' => 'no',
+            'category_id' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('recipes')->insert([
+            'name' => '',
+            'image' => '',
+            'prep_time' => 60,
+            'description' => '',
+            'ingredients' => '',
+            'recipe' => '<span>Step 1</span>
+                        <p></p>
+                        <span>Step 2</span>
+                        <p></p>
+                        <span> Step 3</span>
+                        <p></p>
+                        <span>Step 4</span>
+                        <p></p>',
+            'vegetarian' => 'no',
+            'category_id' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('recipes')->insert([
+            'name' => '',
+            'image' => '',
+            'prep_time' => 60,
+            'description' => '',
+            'ingredients' => '',
+            'recipe' => '<span>Step 1</span>
+                        <p></p>
+                        <span>Step 2</span>
+                        <p></p>
+                        <span> Step 3</span>
+                        <p></p>
+                        <span>Step 4</span>
+                        <p></p>',
+            'vegetarian' => 'no',
+            'category_id' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('recipes')->insert([
+            'name' => '',
+            'image' => '',
+            'prep_time' => 60,
+            'description' => '',
+            'ingredients' => '',
+            'recipe' => '<span>Step 1</span>
+                        <p></p>
+                        <span>Step 2</span>
+                        <p></p>
+                        <span> Step 3</span>
+                        <p></p>
+                        <span>Step 4</span>
+                        <p></p>',
+            'vegetarian' => 'no',
+            'category_id' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('recipes')->insert([
+            'name' => '',
+            'image' => '',
+            'prep_time' => 60,
+            'description' => '',
+            'ingredients' => '',
+            'recipe' => '<span>Step 1</span>
+                        <p></p>
+                        <span>Step 2</span>
+                        <p></p>
+                        <span> Step 3</span>
+                        <p></p>
+                        <span>Step 4</span>
+                        <p></p>',
+            'vegetarian' => 'no',
+            'category_id' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
     }
 }
