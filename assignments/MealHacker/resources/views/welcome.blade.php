@@ -56,20 +56,20 @@
     <section class="section main-content">
         <div class="container">
             <div class="columns">
-                <div class="column">
+                <div class="column is-two-thirds">
                     <div class="card-posts">
                         <div class="card-post-item">
                             <div class="mb-4"><a class="button has-background-grey-lighter has-text-black is-radiusless is-uppercase">Ukrainian</a></div>
                             <div class="card card-post is-shadowless">
                                 <div class="card-post-header">
                                     <h1>Borsh</h1>
-                                    <h4 class="is-uppercase">August 12, 2017</h4>
+                                    <h4 class="is-uppercase pb-2">August 12, 2017</h4>
                                 </div>
                                 <div class="card-image">
                                     <figure class="image is-4by3"><img src="images/borsh.jpg" alt="Placeholder image" /></figure>
                                 </div>
                                 <div class="card-content is-paddingless">
-                                    <div class="content">
+                                    <div class="content pt-5">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in est fugiat quia harum eaque sequi illo qui? Tempore ducimus qui laboriosam, laborum molestias numquam corrupti fugit quas
                                         dolorum similique.
                                     </div>
@@ -129,13 +129,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="column sidebar">
+                <div class="column sidebar is-one-third">
                     <div id="about-me">
                         <div class="has-text-centered">
-                            <div class="img" style="background: url(./img/aboutme.png);"></div>
+                            <div class="img" style="background: url(images/inna.jpg);"></div>
                             <h1 class="has-text-white is-uppercase">About Me</h1>
                         </div>
-                        <div class="has-text-white body">
+                        <div class="has-text-white body mb-6">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium facilis, culpa, maiores perspiciatis neque fugiat exercitationem vero soluta eaque expedita suscipit commodi blanditiis aliquid magnam
                             delectus et! Quaerat, adipisci omnis.<a href="" class="has-text-white is-uppercase">Read More</a>
                         </div>
@@ -146,27 +146,23 @@
                             <table>
                                 <tbody>
                                 <tr>
-                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
+                                    <td><a href="">Ukrainian Cuisine</a></td>
                                     <td><span class="dashed-container__content-counter">(33)</span></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
+                                    <td><a href="">Egyptian Cuisine</a></td>
                                     <td><span class="dashed-container__content-counter">(33)</span></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
+                                    <td><a href="">Italian Cuisine</a></td>
                                     <td><span class="dashed-container__content-counter">(33)</span></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
+                                    <td><a href="">Japanese Cuisine</a></td>
                                     <td><span class="dashed-container__content-counter">(33)</span></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
-                                    <td><span class="dashed-container__content-counter">(33)</span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="">Lorem ipsum dolor sit amet consectetur</a></td>
+                                    <td><a href="">Turkish Cuisine</a></td>
                                     <td><span class="dashed-container__content-counter">(33)</span></td>
                                 </tr>
                                 </tbody>
@@ -227,6 +223,32 @@
             </div>
         </div>
     </section>
+    <footer class="footer has-background-dark">
+        <div class="container">
+            <div class="footer-content">
+                <div>© 2018 Carbonite Blog - All Rights Reserved.</div>
+                <div>
+                    <ul class="footer-social-links">
+                        <li>
+                            <a href=""><span class="fa fa-facebook-f"></span></a>
+                        </li>
+                        <li>
+                            <a href=""><span class="fa fa-twitter"></span></a>
+                        </li>
+                        <li>
+                            <a href=""><span class="fa fa-linkedin"></span></a>
+                        </li>
+                        <li>
+                            <a href=""><span class="fa fa-youtube"></span></a>
+                        </li>
+                        <li>
+                            <a href=""><span class="fa fa-instagram"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </main>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
