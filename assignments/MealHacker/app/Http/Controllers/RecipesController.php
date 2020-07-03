@@ -15,7 +15,7 @@ class RecipesController extends Controller
     public function index()
     {
         $recipes = Recipe::all();
-        $title = 'Recipe List';
+        $title = 'MealHacker';
         return view('home', compact('recipes', 'title'));
 
     }
