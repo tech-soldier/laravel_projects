@@ -57,12 +57,11 @@
                     <div class="card-post-item">
 
                         <div class="mb-4"><a class="button has-background-grey-lighter has-text-black is-radiusless is-uppercase">Ukrainian</a></div>
-                        <div class="mb-4"><a class="button has-background-grey-lighter has-text-black is-radiusless is-uppercase">{{ $recipe->prep_time }} min</a></div>
                         <div class="card card-post is-shadowless">
                             <div class="card-post-header">
-                                <h1>{{ $recipe->name }}</h1>
                                 <h4 class="is-uppercase pb-2">Vegetarian: {{ $recipe->Vegetarian }}</h4>
-                                <h4 class="is-uppercase pb-2">{{ date('l, F j, Y  \a\t g:i A', strtotime($recipe->created_at))  }}</h4>
+                                <h4 class="is-uppercase pb-2">Preparation Time: {{ $recipe->prep_time }} min</h4>
+
                             </div>
                             <div class="card-image">
                                 <figure class="image is-4by3"><img src="../../images/{{ $recipe->image }}" alt="Placeholder image" /></figure>
@@ -74,7 +73,9 @@
                                 <div class="content pt-5">
                                     {!! $recipe->recipe !!}
                                 </div>
-
+                            </div>
+                            <div class="card-post-header">
+                                <h4 class="is-uppercase pb-4 pt-4">{{ date('l, F j, Y  \a\t g:i A', strtotime($recipe->created_at))  }}</h4>
                             </div>
                         </div>
                     </div>

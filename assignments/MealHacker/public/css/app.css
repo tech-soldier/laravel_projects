@@ -15774,6 +15774,7 @@ button {
 
 .has-background-grey-lighter {
   background-color: #dbdbdb !important;
+  display: inline-block;
 }
 
 .has-text-black {
