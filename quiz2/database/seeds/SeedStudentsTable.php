@@ -17,7 +17,7 @@ class SeedStudentsTable extends Seeder
             'first_name' => 'Inna',
             'last_name' => 'Soldatkina',
             'image' => 'inna.jpg',
-            'email' => 'i-soldatkina@webmail.uwinnipeg.ca',
+            'email' => '<li>i-soldatkina@webmail.uwinnipeg.ca</li><li>jkjsnfkd</li><li>ksdnvosnvks</li>',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
