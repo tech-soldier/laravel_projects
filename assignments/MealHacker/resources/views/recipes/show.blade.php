@@ -10,31 +10,7 @@
 </head>
 <body>
 <header class="header">
-    <nav class="navbar is-dark">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item has-text-white is-size-4 has-text-weight-bold" href="https://biron.bironthemes.com">
-                    MealHacker
-                </a>
-                <span role="button" tabindex="0" class="navbar-burger burger has-text-white" data-target="navbar-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-            </div>
-            <div id="navbar-menu" class="navbar-menu">
-                <div class="navbar-end">
-                    <!-- Loop through the navigation items -->
-                    <a class="navbar-item nav-home is-active" href="">Home</a>
-                    <a class="navbar-item nav-style-guide" href="">Recipes</a>
-                    <a class="navbar-item nav-features" href="">About</a>
-                    <a class="navbar-item nav-tech" href="https://biron.bironthemes.com/tag/technology/">Contact</a>
-
-
-                </div>
-            </div>
-        </div>
-    </nav>
+    @include('partials._nav')
 </header>
 <section class="hero is-primary is-bold">
     <div class="hero-body">
@@ -56,7 +32,7 @@
                 <div class="card-posts">
                     <div class="card-post-item">
 
-                        <div class="mb-4"><a class="button has-background-grey-lighter has-text-black is-radiusless is-uppercase">Ukrainian</a></div>
+                        <div class="mb-4"><a class="button has-background-grey-lighter has-text-black is-radiusless is-uppercase">{{ $recipe->category->name }}</a></div>
                         <div class="card card-post is-shadowless">
                             <div class="card-post-header">
                                 <h4 class="is-uppercase pb-2">Vegetarian: {{ $recipe->Vegetarian }}</h4>
@@ -68,9 +44,11 @@
                             </div>
                             <div class="card-content is-paddingless">
                                 <div class="content pt-5">
+                                    <h2>Ingredients:</h2>
                                     {!! $recipe->ingredients !!}
                                 </div>
                                 <div class="content pt-5">
+                                    <h2>Step by step instructions</h2>
                                     {!! $recipe->recipe !!}
                                 </div>
                             </div>
