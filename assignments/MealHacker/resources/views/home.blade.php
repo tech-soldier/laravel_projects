@@ -23,7 +23,7 @@
                                     <div class="content pt-5">
                                         {!! $recipe->description !!}
                                     </div>
-                                    <a href="" class="button has-background-primary has-text-white is-radiusless">Read More</a>
+                                    <a href="/recipes/{{ $recipe->id  }}/show" class="button has-background-primary has-text-white is-radiusless">Read More</a>
                                 </div>
                             </div>
                         </div>
