@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Recipe;
+use App\Category;
 
 class RecipesController extends Controller
 {
@@ -15,8 +16,9 @@ class RecipesController extends Controller
     public function index()
     {
         $recipes = Recipe::all();
+        $categories = Category::all();
         $title = 'MealHacker';
-        return view('recipes.all', compact('recipes', 'title'));
+        return view('recipes.all', compact('recipes', 'title', 'categories'));
 
     }
 
@@ -47,11 +49,13 @@ class RecipesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show(Recipe $id)
     {
-
+        // id is a recipe
+        $data['recipe'] = $id;
+        $data['title'] = $data['recipe']->name;
+        return view('recipes.show', $data);
     }
-
 
 
     /**

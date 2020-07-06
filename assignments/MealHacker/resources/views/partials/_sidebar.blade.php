@@ -14,26 +14,11 @@
         <div class="dashed-container__content">
             <table>
                 <tbody>
+                @foreach($categories as $category)
                 <tr>
-                    <td><a href="">Ukrainian Cuisine</a></td>
-                    <td><span class="dashed-container__content-counter">(33)</span></td>
+                    <td><a href="">{{ $category->name }}</a></td>
                 </tr>
-                <tr>
-                    <td><a href="">Egyptian Cuisine</a></td>
-                    <td><span class="dashed-container__content-counter">(33)</span></td>
-                </tr>
-                <tr>
-                    <td><a href="">Italian Cuisine</a></td>
-                    <td><span class="dashed-container__content-counter">(33)</span></td>
-                </tr>
-                <tr>
-                    <td><a href="">Japanese Cuisine</a></td>
-                    <td><span class="dashed-container__content-counter">(33)</span></td>
-                </tr>
-                <tr>
-                    <td><a href="">Turkish Cuisine</a></td>
-                    <td><span class="dashed-container__content-counter">(33)</span></td>
-                </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>
