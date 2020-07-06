@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    @include('partials._head)
-</head>
-<body>
-<header class="header">
-    @include('partials._nav')
-</header>
-<main class="main">
-    @include('partials._hero')
+@extends('layouts.main')
+
+    @section('content')
     <section class="section main-content">
         <div class="container">
             <div class="columns">
@@ -37,28 +29,9 @@
                         </div>
                         @endforeach
                     </div>
-                    <ul class="pagination-list">
-                        <li>
-                            <a class="pagination-link pagination-btn"><i class="fa fa-arrow-left"></i></a>
-                        </li>
-                        <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
-                        <li><a class="pagination-link" aria-label="Goto page 2">2</a></li>
-                        <li><a class="pagination-link" aria-label="Goto page 3">3</a></li>
-                        <li><a class="pagination-link" aria-label="Goto page 4">4</a></li>
-                        <li>
-                            <a class="pagination-link pagination-btn"><i class="fa fa-arrow-right"></i></a>
-                        </li>
-                    </ul>
                 </div>
-                    @include('partials._sidebar')
-                </div>
+                @include('partials._sidebar')
             </div>
         </div>
     </section>
-    <footer class="footer has-background-dark">
-        @include('partials._footer')
-    </footer>
-</main>
-<script type="text/javascript" src="js/app.js"></script>
-</body>
-</html>
+@endsection

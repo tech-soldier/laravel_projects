@@ -5,8 +5,8 @@
             <h1 class="has-text-white is-uppercase">About Me</h1>
         </div>
         <div class="has-text-white body mb-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium facilis, culpa, maiores perspiciatis neque fugiat exercitationem vero soluta eaque expedita suscipit commodi blanditiis aliquid magnam
-            delectus et! Quaerat, adipisci omnis.<a href="" class="has-text-white is-uppercase">Read More</a>
+            This blog is about the best recipes from around the world. I've accumulated them throughout my travel experience, and some I got from my family and friends.
+            Welcome and I hope you enjoy your food!<a href="/about" class="has-text-white is-uppercase">Read More</a>
         </div>
     </div>
     <div id="categories" class="dashed-container">
@@ -38,32 +38,7 @@
             </table>
         </div>
     </div>
-    <div id="latest-blogs" class="dashed-container">
-        <div class="dashed-container__title is-uppercase">Latest Blogs<span></span></div>
-        <div class="dashed-container__content">
-            <a href="" class="latest-blogs__item">
-                <div class="latest-blogs__item-image" style="background: url('./img/latest-blog-1.png');"></div>
-                <div class="latest-blogs__item-content">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                    <div>12-09-2018</div>
-                </div>
-            </a>
-            <a href="" class="latest-blogs__item">
-                <div class="latest-blogs__item-image" style="background: url('./img/latest-blog-2.png');"></div>
-                <div class="latest-blogs__item-content">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                    <div>12-09-2018</div>
-                </div>
-            </a>
-            <a href="" class="latest-blogs__item">
-                <div class="latest-blogs__item-image" style="background: url('./img/latest-blog-3.png');"></div>
-                <div class="latest-blogs__item-content">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                    <div>12-09-2018</div>
-                </div>
-            </a>
-        </div>
-    </div>
+
     <div class="dashed-container">
         <div class="dashed-container__title is-uppercase">Subscribe & Follow<span></span></div>
         <div class="dashed-container__content">

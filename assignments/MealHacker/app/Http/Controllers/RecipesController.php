@@ -16,7 +16,7 @@ class RecipesController extends Controller
     {
         $recipes = Recipe::all();
         $title = 'MealHacker';
-        return view('home', compact('recipes', 'title'));
+        return view('recipes.all', compact('recipes', 'title'));
 
     }
 
@@ -47,13 +47,12 @@ class RecipesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Recipe $id)
+    public function show()
     {
-        // id is a recipe
-        $data['recipe'] = $id;
-        $data['title'] = $data['recipe']->name;
-        return view('recipes.show', $data);
+
     }
+
+
 
     /**
      * Show the form for editing the specified resource.

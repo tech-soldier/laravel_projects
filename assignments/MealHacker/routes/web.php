@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'RecipesController@index');
+Route::get('/recipes', 'RecipesController@index');
 
 Route::get('/recipes/{id}/show', 'RecipesController@show');
+
+
+Route::get('/', 'PagesController@getHome');
+Route::get('/about', 'PagesController@getAbout');
+Route::get('/contact', 'PagesController@getContact');
+
