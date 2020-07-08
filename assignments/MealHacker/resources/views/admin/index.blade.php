@@ -9,26 +9,14 @@
                     {{ $title }}
                 </h1>
                 <h2 class="subtitle">
-                    Boats Table
+                    {{ $h2 }}
                 </h2>
 
             </div>
+            <br>
+            <button type="submit" class="button is-primary is-left add"><a href="/recipe.create">Add Recipe</a></button>
         </div>
-        <form action="/admin/add_boat.php" method="get" novalidate>
-            <button type="submit" class="button is-primary add">Add a boat</button>
-        </form>
-        <form action="/admin/boats.php" method="get" novalidate autocomplete="off">
-            <div class="field has-addons has-addons-right">
-                <div class="control">
-                    <input name="search" id="search" class="input" type="text" placeholder="Search for a boat">
 
-                </div>
-                <div class="control">
-                    <input type="submit" value="Search" class="button is-info is-light" />
-                </div>
-
-            </div>
-        </form>
     </section>
 
     <div class="table-container">
@@ -50,8 +38,12 @@
                     <td>{{ $recipe->category->name }}</td>
                     <td>{{ $recipe->description }}</td>
                     <td>{{ $recipe->prep_time }}</td>
-                    <td> </td>
-                    <td> </td>
+                    <td><br> {!! Html::linkRoute('recipe.edit', 'Edit', array($recipe->id), array('class'=>'button admin-button is-primary')) !!}</td>
+                    <td>
+                        `{!! Form::open(['route' => ['recipe.destroy', $recipe->id], 'method' => 'DELETE']) !!}
+
+                        {!! Form::submit('Delete', ['class' => 'button admin-button is-danger']) !!}
+                    </td>
 
                     @endforeach
                 </tr>

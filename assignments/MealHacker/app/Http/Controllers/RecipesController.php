@@ -19,8 +19,9 @@ class RecipesController extends Controller
     {
         $recipes = Recipe::all();
         $categories = Category::all();
-        $title = 'MealHacker';
-        return view('recipes.all', compact('recipes', 'title', 'categories'));
+        $title = 'Admin Page';
+        $h2 = "All the recipes";
+        return view('admin.index', compact('recipes', 'title', 'categories', 'h2'));
 
     }
 
