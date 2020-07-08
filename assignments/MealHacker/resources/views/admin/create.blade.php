@@ -4,40 +4,30 @@
     <div class="form-container columns">
         <h1 class="is-uppercase pb-2 is-size-3">{{ $title }}</h1>
 
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-
-        {!! Form::open(array('route' => 'recipe.store', 'data-parsley-validate' => '')) !!}
+        {!! Form::open(array('route' => 'recipe.store')) !!}
             <div class="field">
                 {{ Form::label('name', 'Title:', array('class' => 'label')) }}
-                {{ Form::text('name', null, array('class' => 'input is-info', 'required' => '', 'maxlength' => '255')) }}
+                {{ Form::text('name', null, array('class' => 'input is-info', 'maxlength' => '255')) }}
             </div>
 
             <div class="field">
                 {{ Form::label('description', 'Short Description:', array('class' => 'label'))}}
-                {{Form::textarea('description', null, array('class' => 'textarea is-info is-small', 'required' => '')) }}
+                {{Form::textarea('description', null, array('class' => 'textarea is-info is-small')) }}
             </div>
 
             <div class="field">
                 {{ Form::label('ingredients', 'Ingredients:', array('class' => 'label'))}}
-                {{Form::textarea('ingredients', null, array('class' => 'textarea is-info is-small', 'required' => '')) }}
+                {{Form::textarea('ingredients', null, array('class' => 'textarea is-info is-small')) }}
             </div>
 
             <div class="field">
                 {{ Form::label('recipe', 'Step by step recipe:', array('class' => 'label'))}}
-                {{Form::textarea('recipe', null, array('class' => 'textarea is-info is-medium', 'required' => '')) }}
+                {{Form::textarea('recipe', null, array('class' => 'textarea is-info is-medium')) }}
             </div>
 
             <div class="field">
                 {{ Form::label('prep_time', 'Preparation time (in minutes):', array('class' => 'label'))}}
-                {{Form::number('prep_time', null, array('class' => 'input is-info', 'required' => '')) }}
+                {{Form::number('prep_time', null, array('class' => 'input is-info')) }}
             </div>
 
             <div class="field">

@@ -82,9 +82,8 @@ class RecipesController extends Controller
     public function show(Recipe $id)
     {
         // id is a recipe
-        $data['recipe'] = $id;
-        $data['title'] = $data['recipe']->name;
-        return view('recipes.show', $data);
+        $title = 'Detailed View';
+        return view('admin.show')->withTitle($title);
     }
 
 

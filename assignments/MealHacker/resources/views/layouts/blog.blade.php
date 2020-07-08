@@ -6,6 +6,7 @@
 <body>
 <header class="header">
     @include('partials._nav')
+    @include('partials._messages')
 </header>
 <main class="main">
     @yield('content')
