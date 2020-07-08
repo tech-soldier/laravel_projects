@@ -79,11 +79,12 @@ class RecipesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Recipe $id)
+    public function show($id)
     {
+        $recipe = Recipe::find($id);
         // id is a recipe
         $title = 'Detailed View';
-        return view('admin.show')->withTitle($title);
+        return view('admin.show')->withTitle($title)->withRecipe($recipe);
     }
 
 

@@ -15795,19 +15795,12 @@ button {
 
 .columns {
   margin-top: 1px;
-  padding: 50px 80px;
   min-height: 385px;
 }
 
 button.is-primary {
   position: absolute;
   left: 90px;
-}
-
-div.column {
-  background-color: whitesmoke;
-  margin: 12px 20px;
-  border: 1px solid #000;
 }
 
 div.hero-body {

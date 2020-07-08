@@ -8,6 +8,7 @@
 
 @if ($errors->any())
     <div class="notification is-danger">
+        <button class="delete"></button>
         <strong>Errors: </strong>
         <ul>
             @foreach ($errors->all() as $error)
