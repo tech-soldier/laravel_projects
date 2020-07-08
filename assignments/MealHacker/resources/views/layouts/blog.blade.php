@@ -10,11 +10,10 @@
 <main class="main">
     @yield('content')
 
-
-    <footer class="footer has-background-dark">
-        @include('partials._footer')
-    </footer>
 </main>
+<footer class="footer has-background-dark">
+    @include('partials._footer')
+</footer>
 <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

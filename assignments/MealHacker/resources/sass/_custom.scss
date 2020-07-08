@@ -234,3 +234,111 @@ button {
     border-top: 1.2px solid #d8d7d7;
     padding: 64px 0px;
 }
+
+// admin page styles
+
+/* admin pages css file */
+
+.columns {
+    margin-top: 1px;
+    padding: 50px 80px;
+    min-height: 385px;
+}
+
+button.is-primary {
+    position: absolute;
+    left: 90px;
+}
+
+div.column {
+    background-color: whitesmoke;
+    margin: 12px 20px;
+    border: 1px solid #000;
+}
+
+div.hero-body {
+    position: relative;
+}
+
+th {
+    background-color: #eee;
+}
+
+input.is-info,
+.textarea{
+    max-width: 40%;
+    min-width: 40%;
+}
+
+.is-small.textarea{
+max-height: 80px;
+    min-height: 80px;
+}
+
+input.has-addons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+h2.dashboard-heading {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #1f2b59;
+    font-weight: bold;
+}
+
+.category_highlight {
+    font-weight: bold;
+}
+
+div.form-container {
+    padding: 20px 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container {
+    padding: 20px 90px;
+}
+
+table {
+    width: 100%;
+}
+
+footer.footer {
+    background-color: #eee;
+    padding: 50px 0;
+}
+
+button.is-link {
+    margin-right: 10px;
+}
+
+div.field {
+    margin-bottom: 10px;
+    margin-right: 110px;
+}
+
+.flash {
+    width: 100%;
+    line-height: 40px;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.error {
+    background-color: #f57474;
+}
+
+.success {
+    background-color: #aef1ae;
+}
+
+input.button {
+    padding: 5px 40px;
+}
+
+
+// end of admin page styles

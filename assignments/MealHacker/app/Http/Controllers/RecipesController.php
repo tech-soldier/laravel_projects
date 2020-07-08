@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests;
 use App\Recipe;
 use App\Category;
+use Session;
 
 class RecipesController extends Controller
 {
@@ -29,7 +31,8 @@ class RecipesController extends Controller
      */
     public function create()
     {
-        //
+        $title = 'Create a New Recipe';
+        return view('admin.create')->withTitle($title);
     }
 
     /**
@@ -40,7 +43,34 @@ class RecipesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validating the data
+        $request->validate([
+            'name' => 'required|max:255',
+            'description' => 'required',
+            'ingredients' => 'required',
+            'recipe' => 'required',
+            'prep_time' => 'required|integer',
+        ]);
+
+        //storing the data in the database
+        $recipe = new Recipe;
+
+        $recipe->name = $request->name;
+        $recipe->description = $request->description;
+        $recipe->ingredients = $request->ingredients;
+        $recipe->recipe = $request->recipe;
+        $recipe->prep_time = $request->prep_time;
+        $recipe->Vegetarian = $request->Vegetarian;
+        $recipe->image = $request->image;
+        $recipe->category_id = $request->category_id;
+
+        $recipe->save();
+
+        Session::flash('success', 'The recipe was successfully added!');
+
+
+        // redirect to another page
+        return back();
     }
 
     /**
