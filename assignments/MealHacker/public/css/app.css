@@ -15807,6 +15807,12 @@ div.hero-body {
   position: relative;
 }
 
+.admin-button {
+  width: 90px;
+  padding: 5px 0;
+  margin-bottom: 15px;
+}
+
 th {
   background-color: #eee;
 }
@@ -15885,5 +15891,13 @@ div.field {
 
 input.button {
   padding: 5px 40px;
+}
+
+.admin-sidebar {
+  background-color: whitesmoke;
+  max-height: 230px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid grey;
 }
 

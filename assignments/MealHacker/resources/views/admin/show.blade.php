@@ -34,6 +34,10 @@
                                 </div>
                                 <div class="card-content is-paddingless">
                                     <div class="content pt-5">
+                                        <h2>Short description:</h2>
+                                        {!! $recipe->description !!}
+                                    </div>
+                                    <div class="content pt-5">
                                         <h2>Ingredients:</h2>
                                         {!! $recipe->ingredients !!}
                                     </div>
@@ -46,6 +50,27 @@
                                     <h4 class="is-uppercase pb-4 pt-4">{{ date('l, F j, Y  \a\t g:i A', strtotime($recipe->created_at))  }}</h4>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-fifth ml-6 admin-sidebar">
+                    <div class="columns">
+                        <div class="column admin-date is-half">
+                            <h2 class="mb-4 has-text-weight-medium">Created At:</h2>
+                            <br>
+                            <h2 class="mb-4 has-text-weight-medium">Updated At:</h2>
+                            <br>
+                            {!! Html::linkRoute('recipe.edit', 'Edit', array($recipe->id), array('class'=>'button admin-button is-primary')) !!}
+                        </div>
+                        <div class="column is-half">
+                            <p class="mb-4">{{ $recipe->created_at }}</p>
+
+                            <p class="mb-4">{{ $recipe->updated_at }}</p>
+                            {!! Form::open(['route' => ['recipe.destroy', $recipe->id], 'method' => 'DELETE']) !!}
+
+                            {!! Form::submit('Delete', ['class' => 'button admin-button is-danger']) !!}
+
+                            {!! Form::close() !!}
                         </div>
                     </div>
                 </div>
