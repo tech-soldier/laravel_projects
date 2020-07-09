@@ -241,8 +241,7 @@ button {
 
 .columns {
     margin-top: 1px;
-    min-height: 385px;
-}
+   }
 
 button.is-primary {
     position: absolute;
@@ -265,8 +264,8 @@ th {
 
 input.is-info,
 .textarea{
-    max-width: 40%;
-    min-width: 40%;
+    max-width: 60%;
+    min-width: 60%;
 }
 
 .is-small.textarea{

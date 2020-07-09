@@ -51,6 +51,8 @@ class RecipesController extends Controller
             'ingredients' => 'required',
             'recipe' => 'required',
             'prep_time' => 'required|integer',
+            'image' => 'required',
+            'category_id' => 'required',
         ]);
 
         //storing the data in the database
@@ -97,7 +99,12 @@ class RecipesController extends Controller
      */
     public function edit($id)
     {
-        //
+        //find the recipe in the database and save it in the variable
+        $recipe = Recipe::find($id);
+        $title = "Edit recipe";
+
+        //return the view and pass the variable
+        return view('admin.edit')->withRecipe($recipe)->withTitle($title);
     }
 
     /**
@@ -109,7 +116,36 @@ class RecipesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //validating the data
+        $request->validate([
+            'name' => 'required|max:255',
+            'description' => 'required',
+            'ingredients' => 'required',
+            'recipe' => 'required',
+            'prep_time' => 'required|integer',
+            'image' => 'required',
+            'category_id' => 'required',
+        ]);
+
+        //save to databese
+        $recipe = recipe::find($id);
+
+        $recipe->name = $request->input('name');
+        $recipe->description = $request->input('description');
+        $recipe->ingredients = $request->input('ingredients');
+        $recipe->recipe = $request->input('recipe');
+        $recipe->prep_time = $request->input('prep_time');
+        $recipe->Vegetarian = $request->input('Vegetarian');
+        $recipe->image = $request->input('image');
+        $recipe->category_id = $request->input('category_id');
+
+        $recipe->save();
+
+        Session::flash('success', 'The recipe was successfully updated!');
+
+
+        // redirect to another page
+        return redirect()->route('recipe.show', $recipe->id);
     }
 
     /**

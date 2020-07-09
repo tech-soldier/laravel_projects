@@ -29,6 +29,7 @@
                 <th>Preparation time</th>
                 <th>View</th>
                 <th>Edit</th>
+                <th>Delete</th>
             </tr>
             </thead>
             <tbody>
@@ -41,9 +42,10 @@
                     <td><br> <a href="{{ route('recipe.show', $recipe->id) }}" class="button is-success">View</a></td>
                     <td><br>
                         {!! Html::linkRoute('recipe.edit', 'Edit', array($recipe->id), array('class'=>'button admin-button is-warning')) !!}
-{{--                        {!! Form::open(['route' => ['recipe.destroy', $recipe->id], 'method' => 'DELETE']) !!}--}}
+                    </td>
+                    <td><br>    {!! Form::open(['route' => ['recipe.destroy', $recipe->id], 'method' => 'DELETE']) !!}
 
-{{--                        {!! Form::submit('Delete', ['class' => 'button admin-button is-danger']) !!}--}}
+                        {!! Form::submit('Delete', ['class' => 'button admin-button is-danger']) !!}
                     </td>
 
                     @endforeach
@@ -55,6 +57,7 @@
                 <th>Category</th>
                 <th>Description</th>
                 <th>Preparation time</th>
+                <th>View</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>

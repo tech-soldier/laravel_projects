@@ -1,7 +1,7 @@
 <nav class="navbar is-dark">
     <div class="container">
         <div class="navbar-brand">
-            <a class="navbar-item has-text-white is-size-4 has-text-weight-bold" href="/">
+            <a class="navbar-item has-text-white is-size-4 has-text-weight-bold" href="/recipe">
                 Admin
             </a>
             <span role="button" tabindex="0" class="navbar-burger burger has-text-white" data-target="navbar-menu">
