@@ -14,7 +14,7 @@
 
             </div>
             <br>
-            <button type="submit" class="button is-primary is-left add"><a href="/recipe.create">Add Recipe</a></button>
+            <a href="{{ route('recipe.create') }}" class="button ml-6">Add Recipe</a>
         </div>
 
     </section>
@@ -27,8 +27,8 @@
                 <th>Category</th>
                 <th>Description</th>
                 <th>Preparation time</th>
+                <th>View</th>
                 <th>Edit</th>
-                <th>Delete</th>
             </tr>
             </thead>
             <tbody>
@@ -36,13 +36,14 @@
                 <tr>
                     <td><strong>{{ $recipe->name }}</strong></td>
                     <td>{{ $recipe->category->name }}</td>
-                    <td>{{ $recipe->description }}</td>
+                    <td>{{ substr($recipe->description, 0, 50) }}{{ strlen($recipe->description) > 50 ? "..." : "" }}</td>
                     <td>{{ $recipe->prep_time }}</td>
-                    <td><br> {!! Html::linkRoute('recipe.edit', 'Edit', array($recipe->id), array('class'=>'button admin-button is-primary')) !!}</td>
-                    <td>
-                        `{!! Form::open(['route' => ['recipe.destroy', $recipe->id], 'method' => 'DELETE']) !!}
+                    <td><br> <a href="{{ route('recipe.show', $recipe->id) }}" class="button is-success">View</a></td>
+                    <td><br>
+                        {!! Html::linkRoute('recipe.edit', 'Edit', array($recipe->id), array('class'=>'button admin-button is-warning')) !!}
+{{--                        {!! Form::open(['route' => ['recipe.destroy', $recipe->id], 'method' => 'DELETE']) !!}--}}
 
-                        {!! Form::submit('Delete', ['class' => 'button admin-button is-danger']) !!}
+{{--                        {!! Form::submit('Delete', ['class' => 'button admin-button is-danger']) !!}--}}
                     </td>
 
                     @endforeach

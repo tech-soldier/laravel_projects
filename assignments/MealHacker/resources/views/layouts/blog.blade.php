@@ -5,7 +5,7 @@
 </head>
 <body>
 <header class="header">
-    @include('partials._nav')
+    @include('partials._admin_nav')
     @include('partials._messages')
 </header>
 <main class="main">

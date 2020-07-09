@@ -13,10 +13,10 @@
         <div id="navbar-menu" class="navbar-menu">
             <div class="navbar-end">
                 <!-- Loop through the navigation items -->
-                <a class="navbar-item nav-home is-active" href="/">Home</a>
-                <a class="navbar-item nav-style-guide" href="/recipes">Recipes</a>
-                <a class="navbar-item nav-features" href="/about">About</a>
-                <a class="navbar-item nav-tech" href="/contact">Contact</a>
+                <a class="{{ Request::is('/') ? "is-active" : "" }} navbar-item nav-home" href="/">Home</a>
+                <a class="{{ Request::is('recipes') ? "is-active" : "" }} navbar-item nav-style-guide" href="/recipes">Recipes</a>
+                <a class="{{ Request::is('about') ? "is-active" : "" }} navbar-item nav-features" href="/about">About</a>
+                <a class="{{ Request::is('contact') ? "is-active" : "" }} navbar-item nav-tech" href="/contact">Contact</a>
             </div>
         </div>
     </div>
