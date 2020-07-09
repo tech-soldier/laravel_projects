@@ -17,11 +17,10 @@ class RecipesController extends Controller
      */
     public function index()
     {
-        $recipes = Recipe::all();
-        $categories = Category::all();
+        $recipes = Recipe::paginate(5);
         $title = 'Admin Page';
         $h2 = "All the recipes";
-        return view('admin.index', compact('recipes', 'title', 'categories', 'h2'));
+        return view('admin.index', compact('recipes', 'title', 'h2'));
 
     }
 
@@ -156,6 +155,13 @@ class RecipesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $recipe = Recipe::find($id);
+
+        $recipe->delete();
+
+        Session::flash('success', 'The recipe was successfully deleted!');
+
+
+        return redirect()->route('recipe.index');
     }
 }

@@ -20,6 +20,7 @@
     </section>
 
     <div class="table-container">
+
         <table class="table is-stripped is-bordered is-hoverable">
             <thead>
             <tr>
@@ -29,7 +30,6 @@
                 <th>Preparation time</th>
                 <th>View</th>
                 <th>Edit</th>
-                <th>Delete</th>
             </tr>
             </thead>
             <tbody>
@@ -43,28 +43,15 @@
                     <td><br>
                         {!! Html::linkRoute('recipe.edit', 'Edit', array($recipe->id), array('class'=>'button admin-button is-warning')) !!}
                     </td>
-                    <td><br>    {!! Form::open(['route' => ['recipe.destroy', $recipe->id], 'method' => 'DELETE']) !!}
-
-                        {!! Form::submit('Delete', ['class' => 'button admin-button is-danger']) !!}
-                    </td>
 
                     @endforeach
                 </tr>
             </tbody>
-            <tfoot>
-            <tr>
-                <th>Title</th>
-                <th>Category</th>
-                <th>Description</th>
-                <th>Preparation time</th>
-                <th>View</th>
-                <th>Edit</th>
-                <th>Delete</th>
-            </tr>
-            </tfoot>
-
         </table>
-    </div>
 
+    </div>
+    <div>
+        {!! $recipes->links(); !!}
+    </div>
 
 @endsection
